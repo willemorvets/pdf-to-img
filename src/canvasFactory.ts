@@ -1,9 +1,9 @@
 import { strict as invariant } from "node:assert";
-import Canvas from "canvas";
+import Canvas from '@napi-rs/canvas';
 
 type Factory = {
   canvas: Canvas.Canvas | null;
-  context: Canvas.CanvasRenderingContext2D | null;
+  context: Canvas.SKRSContext2D | null;
 };
 
 type NonNullableFactory = {
